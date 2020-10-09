@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="static/ssp.css">
+    <!-- end of web manifest -->
+</head>
+
+<body>
+   <nav> 
+       <h2>Safe-Space</h2>
+       <button class="burger" id="burger">
+           &#9776
+       </button>
+
+       <ul>
+         <li><a href="melvineatieno.com">Home</a></li>
+         <li><a rel="noopener" target="blank" href="#">Manual</a></li>
+         <li><a rel="noopener" target="blank" href="#">Log in</a></li>
+         <li><a href="reportcaseform">Report case</a></li>
+       </ul>
+   </nav>
+   <!-- Content-->
+   <div class="Content">
+    <div class="about">
+     <p>Sexual abuse is the actual or attempted physical intrusion of a sexual nature, where either by force or under equal or coercive conditions.
+      Acts of sexual exploitation and abuse include: Sexual assault, demanding sex in any context, forcing someone to have sex with anyone and forcing someone to engage in prostitution or pornography.<p>
+      <p> There is no right or wrong way to react to sexual abuse. A victim/survivor may wonder if s/he should or should not be feeling a certain way, how long s/he should be feeling it for or s/he should
+      be over it by now.<p>
+      <p>Safe-space is here to help you understand the nitty gritties of sexual abuse and provide you with the needed support throught the health care providers and/or law enforcement agencies. 
+      In that same light upon choice a survivor/victim can connect with a counsellor whom they journey with throught the recovery.<p>
+    </div>
+
+    <div>
+    <p>Are you a support institution, i.e. health care provider, law enforcement agency or a therapy center, and would like to be included in the support system. Feel free to click the sign up button.</p>
+    </div>
+   
+   <!-- Button to open the modal -->
+
+<button id="open"><b>Signup</b></button>
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span class="close">&times;</span><br>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+
+      <label for="institution-name"><b>Institution name</b></label>
+      <input type="text" placeholder="enter institution name" name="name" required>
+
+      <label for="institution"><b>Intitution type</b></label>
+      <p><i>Choose one that suits your institution</i></p>
+      <input type="radio" id="Health care provider" name="inst-type" value="Health care provider">
+      <label for="Health care provider">Health Care Provider</label><br>
+      <input type="radio" id="Law enforcement agency" name="inst-type" value="Law enforcement agency">
+      <label for="Law enforcement agency">Law enforcement agency</label><br>
+      <input type="radio" id="Psychologist" name="inst-type" value="Psychologist">
+      <label for="Psychologist">Therapy center</label><br>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signup">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<!-- The Modal for reporting the case -->
+<div id="id02" class="modal">
+  <span class="close">&times;</span><br>
+  <form class="report-case" action="/action_page.php">
+    <div class="container">
+      <h1>Report a case</h1>
+      <p>You did not call for any of the actions done on you and you have every right to receive the bests support. In order to receive the best support from Safe-Space 
+      feel free to fill up the form with as accurate information as possible.</p>
+      <hr>
+
+      <label for="phone-no"><b>Are you the victim<b></label>
+      <p><i>Choose yes if you are the actual victim and no if you are reporting a case done on someone else</i></p>
+      <input type="radio" id="Yes" name="Victim" value="Yes">
+      <label for="Yes">Yes</label><br>
+      <input type="radio" id="No" name="Victim" value="No">
+      <label for="No">No</label><br>
+
+      <label for="phone-no"><b>Phone Number<b></label>
+      <p><i>Include the phone number that you can be reached with throughout the support period</i></p>
+      <input type="value" placeholder="Phone number" name="name" required><br>
+
+      <label for="gender"><b>Gender</b></label>
+      <p><i>Choose the victim's gender</i></p>
+      <input type="radio" id="Male" name="gender" value="Male">
+      <label for="Male">Male</label><br>
+      <input type="radio" id="Female" name="gender" value="Female">
+      <label for="Female">Female</label><br>
+
+      <label for="location"><b>Location</b></label>
+      <p><i>Choose the town in which you reside and prefer to get help</i></p>
+      <input type="dropdown" id="Town" name="Location" required>
+
+<div class="navbar">
+   <a href="#home" class="active">Home</a>
+   <a href="news">News</a>
+   <a href="#contact">Contact</a>
+</div>
+</body>
+<script src="Safe-space.js"></script>
+
+</html>
